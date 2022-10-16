@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  /* font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', */
+  /* monospace; */
+}
+
+body{
+  background-color: #1e1f23;
+}
+/* 
+header{
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+#title{
+  animation: netflixAnimation .3s;
+  animation-delay: .5s;
+  animation-fill-mode: forwards;
+  font-size: 2rem;
+  opacity: 0;
+  font-family: "Roboto";
+  font-weight: 800;
+  font-size: 3rem;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+@keyframes netflixAnimation {
+  
+  0%{
+    text-shadow: 100px 100px 5px rgba(61, 61, 61, 0.689);
+    color:#f3f3f3;
+    transform: scale(2, 2);
+  }
+  20%{
+    transform: scale(1.6, 1.6);
+    text-shadow: 100px 100px 5px rgba(61, 61, 61, 0.689);
+  }
+  100%{
+    transform: scale(1, 1);
+    opacity: 1;
+    background: -webkit-linear-gradient(rgb(106, 14, 163), rgb(46, 109, 217));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 800;
+  }
+
+}
+
+.data-container{
+  position: relative;
+  width: 70%;
+  height: auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: auto;
+  padding: 10px;
+}
+
+
+.data-container div{
+  position: relative;
+  width: 200px;
+  height: 300px;
+  background-color: #f3f3f3;
+  flex-grow: 1;
+  margin: 10px;
+  border-radius: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fadein .8s;
+  animation-delay:.7s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+  bottom: -100px;
+}
+
+@keyframes fadein {
+  0%{
+    opacity: 0;
+    bottom: -100px;
+  }
+  100%{
+    opacity: 1;
+    bottom: 0;
+  }
+}
