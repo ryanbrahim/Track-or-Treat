@@ -19,14 +19,14 @@ video_capture = cv2.VideoCapture(0)
 
 # Load a sample picture and learn how to recognize it.
 print("Looking for Obama face")
-obama_image = face_recognition.load_image_file("C:\\Users\\ryanb\\Desktop\\repos\\Track-or-Treat\\facerec-test\\obama.jpg")
+obama_image = face_recognition.load_image_file("/home/track-or-treat-raspberrypi/hackuiowa/Track-or-Treat/facerec-test/obama.jpg")
 print("Found Obama!")
 obama_face_encoding = face_recognition.face_encodings(obama_image)[0]
 print("Encoded Obama!")
 
 # Load a second sample picture and learn how to recognize it.
 print("Looking for Ryan face")
-ryan_image = face_recognition.load_image_file("C:\\Users\\ryanb\\Desktop\\repos\\Track-or-Treat\\facerec-test\\ryan.jpg")
+ryan_image = face_recognition.load_image_file("/home/track-or-treat-raspberrypi/hackuiowa/Track-or-Treat/facerec-test/ryan.jpg")
 print("Found Ryan!")
 ryan_face_encoding = face_recognition.face_encodings(ryan_image)[0]
 print("Encoded Ryan!")
