@@ -11,7 +11,7 @@ SECONDS_TO_CREDIT = 2
 # time before which an undetected face gets killed, as it is assumed not coming back
 SECONDS_TO_DIE = 0.3
 # maximum radius to allow movement for faces
-MAX_RADIUS = 50;
+MAX_RADIUS = 50
 
 # array to store active faces in frame
 activeFaces = []
